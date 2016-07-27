@@ -2,6 +2,7 @@
 
 A great of the countdown widget, it is very convenient and easy to use.
 
+![enter image description here](Logo/exhibition.gif.gif)
 
 How To Use
 ----------
