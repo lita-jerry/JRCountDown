@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Vj5-aF-MPt">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--SMS verification-->
+        <scene sceneID="Plu-Rx-mqD">
+            <objects>
+                <viewController id="vXV-mX-cTR" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0Uc-1E-7mT"/>
+                        <viewControllerLayoutGuide type="bottom" id="P8b-K9-FUn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eWX-zH-pZF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1cD-ir-WBb">
+                                <rect key="frame" x="70" y="223" width="181" height="34"/>
+                                <state key="normal" title="Send verification code">
+                                    <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonClick:" destination="vXV-mX-cTR" eventType="touchUpInside" id="LUy-GE-pNc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1cD-ir-WBb" firstAttribute="centerY" secondItem="eWX-zH-pZF" secondAttribute="centerY" id="WKI-eD-AMe"/>
+                            <constraint firstItem="1cD-ir-WBb" firstAttribute="centerX" secondItem="eWX-zH-pZF" secondAttribute="centerX" id="ZdZ-DD-ge1"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="SMS verification" id="8YE-dr-7yY"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O6v-KH-LFo" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-28" y="8"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="GB3-nt-dXE">
+            <objects>
+                <tabBarController id="Vj5-aF-MPt" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="J4B-Wa-aik">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="vXV-mX-cTR" kind="relationship" relationship="viewControllers" id="gez-mG-3ZN"/>
+                        <segue destination="VqS-YY-D8A" kind="relationship" relationship="viewControllers" id="Ted-Ie-Zy2"/>
+                        <segue destination="sdY-UB-sic" kind="relationship" relationship="viewControllers" id="9E1-dz-Z2p"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wla-RF-hPv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-708" y="291"/>
+        </scene>
+        <!--tableViewCell-->
+        <scene sceneID="XpY-ma-LMF">
+            <objects>
+                <tableViewController id="sdY-UB-sic" customClass="threeTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="MOJ-fn-zkf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="wQB-1W-qaB">
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wQB-1W-qaB" id="4wp-jV-S4N">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="sdY-UB-sic" id="90c-SR-gQZ"/>
+                            <outlet property="delegate" destination="sdY-UB-sic" id="kSp-d3-jJh"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="tableViewCell" id="pHo-EA-hd4"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tw3-yN-lne" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-444" y="947"/>
+        </scene>
+        <!--show with label-->
+        <scene sceneID="fs5-Wc-eNf">
+            <objects>
+                <viewController id="VqS-YY-D8A" customClass="secondViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pLI-Op-69Z"/>
+                        <viewControllerLayoutGuide type="bottom" id="Iwh-c9-mky"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IgF-Z4-xbb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NBM-mx-XX7">
+                                <rect key="frame" x="120" y="300" width="81" height="30"/>
+                                <state key="normal" title="start button"/>
+                                <connections>
+                                    <action selector="buttonClick:" destination="VqS-YY-D8A" eventType="touchUpInside" id="xEV-Yk-ezL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="show label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wCX-Cc-667">
+                                <rect key="frame" x="120" y="229" width="81" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wCX-Cc-667" firstAttribute="centerY" secondItem="IgF-Z4-xbb" secondAttribute="centerY" id="Dj3-cH-jPF"/>
+                            <constraint firstItem="NBM-mx-XX7" firstAttribute="centerX" secondItem="IgF-Z4-xbb" secondAttribute="centerX" id="XtT-Ye-SLD"/>
+                            <constraint firstItem="NBM-mx-XX7" firstAttribute="top" secondItem="wCX-Cc-667" secondAttribute="bottom" constant="50" id="nog-nA-tA4"/>
+                            <constraint firstItem="wCX-Cc-667" firstAttribute="centerX" secondItem="IgF-Z4-xbb" secondAttribute="centerX" id="qrQ-FY-T8R"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="show with label" id="htl-Gf-QmB"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="showLabel" destination="wCX-Cc-667" id="lRY-Xo-6Fq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pb4-rz-sO6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-28" y="583"/>
+        </scene>
+    </scenes>
+</document>
