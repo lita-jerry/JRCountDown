@@ -4,7 +4,7 @@
 //
 // This code is distributed under the terms and conditions of the Jerry license.
 
-// Copyright (c) 2009-2015 Jerry (  )
+// Copyright (c) 2009-2015 Jerry ( http://www.JerryGod.com )
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
