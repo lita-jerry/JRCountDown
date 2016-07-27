@@ -1,5 +1,5 @@
 ![](Logo/header.png)
-# JRCountDown
+
 A great of the countdown widget, it is very convenient and easy to use.
 
 
@@ -65,7 +65,7 @@ git clone --recursive https://github.com/JerryLoveRice/JRCountDown.git
 Future Enhancements
 -------------------
 
-- I think I'm gradually improving, and hope that put forward suggestions.
+- None plan now,welcome any suggestion.
 
 ## Licenses
 
