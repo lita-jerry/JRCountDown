@@ -60,7 +60,7 @@ you can uses the future date to the parameters, if more than present time, the j
 
 In order to gain access to all the files from the repository, you should clone it.
 ```
-git clone --recursive https://github.com/JerryLoveRice/JRCountDown.git
+git clone --recursive https://github.com/JerrySir/JRCountDown.git
 ```
 
 Future Enhancements
@@ -70,4 +70,4 @@ Future Enhancements
 
 ## Licenses
 
-All source code is licensed under the [MIT License](https://raw.githubusercontent.com/JerryLoveRice/JRCountDown/master/LICENSE).
+All source code is licensed under the [MIT License](https://raw.githubusercontent.com/JerrySir/JRCountDown/master/LICENSE).
